@@ -1,8 +1,8 @@
 .body{
 	color: #FFFFFF;
-    background: #5f2c82; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #24134D , #2A6BD5); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #24134D, #2A6BD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #065E52; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to top, #24134D , #2A6BD5); /* Chrome 10-25, Safari 5.1-6 */*/
+    /*background: linear-gradient(to top, #24134D, #2A6BD5);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 
 }
