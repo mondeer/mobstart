@@ -1,0 +1,10 @@
+<ion-view title-align="center" class="header-strong">
+  <ion-content>
+    <ion-list>
+      <ion-item class="divg" ng-repeat="post in posts" href="#/app/post/{{post.id}}">
+        {{post.title.rendered}}
+        <p><i class="ion ion-ios-calender-outline">{{post.date | limitTo: 10}}</i></p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

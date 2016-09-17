@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!--<script src="js/ng-cordova.min.js"></script>-->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <!-- Include YT library and this directive 
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="lib/ionic/angular-youtube-embed/dist/angular-youtube-embed.min.js"></script>-->
+
+  </head>
+
+  <body ng-app="M.O.B" >
+        <ion-nav-view>
+             <ion-tabs class="tabs-icon-top  tabs-color-positive">
+
+          <!-- Dashboard Tab -->
+          <ion-tab title="M.O.B" icon-off="ion-home" icon-on="ion-home" href="#/app/home">
+            <ion-nav-view name="home"></ion-nav-view>
+          </ion-tab>
+
+          <!-- Chats Tab -->
+          <ion-tab title="Ministries" icon-off="ion-ios-people-outline" icon-on="ion-ios-people" href="#/app/ministries">
+            <ion-nav-view name="ministries"></ion-nav-view>
+          </ion-tab>
+
+          <!-- Account Tab -->
+          <ion-tab title="Contacts" icon-off="ion-social-whatsapp-outline" icon-on="ion-social-whatsapp" href="#/app/contactus">
+            <ion-nav-view name="tab-contacts"></ion-nav-view>
+          </ion-tab>
+
+
+          <ion-tab title="" icon-off="ion-social-facebook-outline" icon-on="ion-social-facebook" href="#/app/ministries">
+            <ion-nav-view name="facebook"></ion-nav-view>
+          </ion-tab>
+
+
+
+            </ion-tabs>
+        </ion-nav-view>
+  </body>
+    
+</html>

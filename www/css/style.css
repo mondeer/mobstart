@@ -1,0 +1,43 @@
+.body{
+	background: #5f2c82; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+}
+
+.header-strong{
+	background: #3373DD
+	color: #ebf3ff;
+	font-size: 28px;
+	font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.sweet{
+	background: #C0CDE3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F0F3F8 , #C0CDE3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F0F3F8 , #C0CDE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+.login {
+    background: url(/img/mob.jpg);
+    color: #3373DD;
+    background-repeat: no-repeat;
+   /* background-size: contain;*/
+    /*background-position: center;*/
+    width: 80%;
+    height: 246px;
+    margin: auto;
+    z-index: 2;
+    /*position: relative;*/
+}
+
+.divg{
+   
+    
+    
+    z-index:1;
+}
+
