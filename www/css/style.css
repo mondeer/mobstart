@@ -1,43 +1,52 @@
 .body{
-	background: #5f2c82; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #FFFFFF;
+    background: #5f2c82; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #24134D , #2A6BD5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #24134D, #2A6BD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 
 }
 
 .header-strong{
 	background: #3373DD
-	color: #ebf3ff;
+	color: #FFFFFF;
 	font-size: 28px;
 	font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
-.sweet{
-	background: #C0CDE3; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #F0F3F8 , #C0CDE3); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #F0F3F8 , #C0CDE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+/*.sweet{
+	color: #FFFFFF;
+    opacity: 0.9;
+    background: #C0CDE3; fallback for old browsers 
+    background: -webkit-linear-gradient(to bottom, #99BDF8 , #24134D);  Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to bottom, #99BDF8 , #24134D); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    }*/
 
 
 .login {
-    background: url(/img/mob.jpg);
-    color: #3373DD;
-    background-repeat: no-repeat;
-   /* background-size: contain;*/
-    /*background-position: center;*/
-    width: 80%;
-    height: 246px;
-    margin: auto;
-    z-index: 2;
-    /*position: relative;*/
+    /*background: url(/img/mob.jpg);*/
+    /*color: #FFFFFF;*/
+    background: -webkit-linear-gradient(to top, #CA1D20 , #931C22); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #CA1D20, #931C22);
 }
 
-.divg{
-   
-    
-    
-    z-index:1;
+.text{
+   color: #FFFFFF;
+   font-family: AvenirNextLTPro-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 

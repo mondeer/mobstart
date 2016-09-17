@@ -1,4 +1,4 @@
-angular.module('M.O.B.controllers', ['ngSanitize'])
+angular.module('M.O.B.controllers', ['ngSanitize', 'ngCordova'])
 
 .controller('AppCtrl', function($scope) {
   // Form data for the login modal
