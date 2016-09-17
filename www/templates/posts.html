@@ -1,10 +1,10 @@
-<ion-view view-title="Bulletin" class="header-strong">
+<ion-view view-title="Bulletin" class="body">
   <ion-content>
-    <ion-list>
-      <ion-item class="divg" ng-repeat="post in posts" href="#/app/post/{{post.id}}">
-        {{post.title.rendered}}
-        <p><i class="ion ion-ios-calender-outline">{{post.date | limitTo: 10}}</i></p>
+    
+      <ion-item class="body" ng-repeat="post in posts" href="#/app/post/{{post.id}}">
+        <h3 class="text">{{post.title.rendered}}</h3>
+        <p class="text"><i class="ion ion-ios-calender-outline">{{post.date | limitTo: 10}}</i></p>
       </ion-item>
-    </ion-list>
+   
   </ion-content>
 </ion-view>
