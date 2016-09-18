@@ -16,6 +16,7 @@ angular.module('M.O.B', ['ionic', 'M.O.B.controllers'])
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
+      statusbar.backgroundColorByHexString('#030C13');
     }
   });
 })
