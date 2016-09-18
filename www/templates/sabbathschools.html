@@ -1,0 +1,10 @@
+<ion-view view-title="sabbath of: {{sabbathschool.date}}" class="body">
+  <ion-content>
+    
+      <ion-item class="divg" ng-repeat="sabbathschool in sabbathschools" href="#/app/sabbathschool/{{sabbathschool.id}}">
+        {{sabbathschool.title.rendered}}
+        <p><i class="ion ion-ios-calender-outline">{{sabbathschool.date | limitTo: 10}}</i></p>
+      </ion-item>
+   
+  </ion-content>
+</ion-view>

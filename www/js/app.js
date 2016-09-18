@@ -87,8 +87,18 @@ angular.module('M.O.B', ['ionic', 'M.O.B.controllers'])
       }
     })
 
+    .state('app.sabbathschools', {
+      url: "/sabbathschools",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/sabbathschools.html",
+          controller: 'SabbathschoolsCtrl'
+        }
+      }
+    })
+
     .state('app.sabbathschool', {
-      url: "/sabbathschool",
+      url: "/sabbathschool/:sabbathschoolId",
       views: {
         'menuContent': {
           templateUrl: "templates/sabbathschool.html",

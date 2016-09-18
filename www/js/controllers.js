@@ -131,10 +131,34 @@ angular.module('M.O.B.controllers', ['ngSanitize', 'ngCordova'])
 
 })
 
-.controller('SabbathschoolCtrl', function($scope) {
-  // alert('happy Sabbath');
-  
+.controller('SabbathschoolsCtrl', function($scope, $rootScope, $http) {
+   $rootScope.sabbathschools = [];
 
+  var myurl = "http://www.mobsdachurch.com/wp-json/wp/v2/posts?filter[category_name]=Sabbath school";
+
+  $http.get(myurl)
+    .success(function(response) {
+      angular.forEach(response, function(child){
+        // console.log(child);
+        $rootScope.sabbathschools.push(child);
+      })
+    });
+  
+  
+})
+
+.controller('SabbathschoolCtrl', function($scope, $rootScope, $stateParams) {
+
+  var id = $stateParams.sabbathschoolId;
+  $scope.sabbathexcerpts = "";
+  $scope.sabbathcontents = "";
+
+  for (var i = 0; i < $rootScope.sabbathschools.length; i++) {
+    $scope.sabbathcontents = $rootScope.sabbathschools[i].content.rendered;
+    $scope.sabbathexcerpts = $rootScope.sabbathschools[i].excerpt.rendered;
+    // $scope.title = $rootScope.posts[i].title.rendered;
+  }
+  
 })
 
 .controller('MinistriesCtrl', function($scope) {
